@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Clean Blog v5.0.10 (https://startbootstrap.com/theme/clean-blog)
- * Copyright 2013-2020 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
  */
 
@@ -172,7 +172,6 @@ img::-moz-selection {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #868e96;
   background-attachment: scroll;
   position: relative;
   background-size: cover;
@@ -407,4 +406,121 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+.container-fluid {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.logo {
+  opacity: 0.8;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+.logo .stroke {
+  border: solid black 3px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-self: center;
+}
+
+.logo .sphere {
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.logo .sphere-center {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  background-size: cover;
+  -webkit-animation: spin-right 200s linear infinite;
+  animation: spin-right 200s linear infinite;
+  /*  */
+}
+
+.logo .stroke-1 {
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin-right 200s linear infinite;
+  animation: spin-right 200s linear infinite;
+}
+
+.logo .sphere-1 {
+  width: 60px;
+  height: 60px;
+  right: -30px;
+  align-self: center;
+}
+
+.logo .stroke-2 {
+  height: 350px;
+  width: 350px;
+  justify-content: center;
+  -webkit-animation: spin-left 250s linear infinite;
+  animation: spin-left 250s linear infinite;
+}
+
+.logo .sphere-2 {
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  justify-self: center;
+}
+
+.logo .sphere-3 {
+  width: 30px;
+  height: 30px;
+  left: -15px;
+  align-self: center;
+}
+
+.logo .stroke-3 {
+  height: 500px;
+  width: 500px;
+  justify-content: center;
+  -webkit-animation: spin-right 180s linear infinite;
+  animation: spin-right 180s linear infinite;
+}
+
+.logo .sphere-4 {
+  width: 30px;
+  height: 30px;
+  bottom: -15px;
+}
+
+.logo .sphere-5 {
+  width: 30px;
+  height: 30px;
+  top: -15px;
+}
+
+@-webkit-keyframes spin-right {
+  from {
+    -webkit-transform: rotate(0deg);
+    background-position: center;
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    background-position: left;
+  }
+}
+
+@-webkit-keyframes spin-left {
+  from {
+    -webkit-transform: rotate(0deg);
+    background-position: center;
+  }
+  to {
+    -webkit-transform: rotate(-359deg);
+    background-position: right;
+  }
 }

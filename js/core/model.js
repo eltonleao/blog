@@ -1,4 +1,4 @@
-const Database = function(siteData){
+const Model = function(siteData){
     var env = this;
     this.siteData = siteData;
     this.database;
@@ -20,4 +20,4 @@ const Database = function(siteData){
     }
 }
 
-export default Database;
+export default Model;

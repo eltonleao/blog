@@ -2,6 +2,8 @@ const View = function (siteData) {
     var env = this;
     this.siteData = siteData;
 
+    document.title = 'eltonleao | blog';
+
     this.renderNavbar = function () {
         let html = "";
         html += '    <div class="container">';
@@ -17,12 +19,12 @@ const View = function (siteData) {
         html += '      <li class="nav-item">';
         html += '        <a class="nav-link" href="index.html">Home</a>';
         html += '      </li>';
-        html += '      <li class="nav-item">';
-        html += '        <a class="nav-link" href="post.html">Sample Post</a>';
-        html += '      </li>';
-        html += '      <li class="nav-item">';
-        html += '        <a class="nav-link" href="contact.html">Contact</a>';
-        html += '      </li>';
+        // html += '      <li class="nav-item">';
+        // html += '        <a class="nav-link" href="post.html">Sample Post</a>';
+        // html += '      </li>';
+        // html += '      <li class="nav-item">';
+        // html += '        <a class="nav-link" href="contact.html">Contact</a>';
+        // html += '      </li>';
         html += '      <li class="nav-item">';
         html += '        <a class="nav-link" href="https://eltonleao.github.io">About</a>';
         html += '      </li>';

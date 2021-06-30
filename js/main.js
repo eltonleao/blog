@@ -2,6 +2,7 @@
 
 import Model from './core/model.js';
 import View from './core/View.js';
+import config from './core/config.js';
 
 const App = function (data) {
     this.db = new Model(data);
@@ -14,7 +15,7 @@ const App = function (data) {
 
 
     this.loadApp = async function () {
-        await this.db.loadDatabase().then(function (result) {
+        this.db.loadDatabase().then(function (result) {
             this.database = result;
             env.view.renderIndexBlogs(result);
         });
@@ -22,10 +23,5 @@ const App = function (data) {
 
 }
 
-const host = window.location.origin;
-var app = new App(
-    {
-        url: host + "/js/core/database.json"
-    }
-);
+var app = new App(config);
 app.loadApp();

@@ -1,15 +1,21 @@
 {
+    "config" : {
+        "sitename" : "eltonleao"
+    },
     "pages" : {
         "index" : {
             "blogs" : [
                 {
-                    "title": "teste"
+                    "title": "teste",
+                    "link" : "teste"
                 },
                 {
-                    "title": "Operação Cat-Drop"
+                    "title": "Operação Cat-Drop",
+                    "link" : "cat-drop"
                 },
                 {
-                    "title": "Initial Commit"
+                    "title": "Initial Commit",
+                    "link" : "initial-commit"
                 }
             ]
         }
